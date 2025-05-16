@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote History</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📜 Quote History</h1>
+        <ul class="history-list">
+            {% for quote in quotes %}
+                <li>{{ quote }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">⬅ Back</a>
+    </div>
+</body>
+</html>
