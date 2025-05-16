@@ -9,11 +9,20 @@
     <div class="container">
         <h1>🌟 Quote of the Moment</h1>
         <div class="card">
-            <p>{{ quote }}</p>
+            <p class="quote">"{{ quote }}"</p>
+            <p class="author">– {{ author }}</p>
         </div>
-        <form method="get">
-            <button type="submit">✨ New Quote</button>
-        </form>
+        <div class="buttons">
+            <form method="get">
+                <button type="submit">🔄 New Quote</button>
+            </form>
+            <form action="/like">
+                <button type="submit">❤️ Like</button>
+            </form>
+            <form action="/history">
+                <button type="submit">📜 View History</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
