@@ -24,3 +24,10 @@ def like():
 def history():
     past_quotes = load_history()
     return render_template("history.html", quotes=past_quotes)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+    
+
+
